@@ -1,0 +1,57 @@
+/* 비주얼 */
+
+.visual {
+    position: relative ;
+    width: 100%;
+    aspect-ratio: 16 / 9 ;
+    /* height: 720px; */
+    max-height: 1080px;
+    min-height: 300px;
+    padding-top: 15%;
+    background-color: gray;
+}
+.visual video{
+    /* width: 100%;
+    display: block; */
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.3;
+}
+/* .visual .video_txt{ 
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+} */
+.video_txt {
+    padding-top: 10%;
+    color: #fff;
+}
+.video_txt h2 {
+    font-size: clamp(28px, 4vw, 128px);
+}
+.video_txt p{
+    width: 50%;
+    margin: 6%;
+    font-size: clamp(12px, 2vw, 18px);
+}
+.video_txt a{
+    display: block;
+    width: 20%;
+    max-width: 300px;
+    min-width: 100px;
+    text-align: center;
+    padding: 1% 0;
+    /* background-color: red; */
+    border: 1px solid #fff;
+    font-size: clamp(12px, 1vw, 16px);
+}
+

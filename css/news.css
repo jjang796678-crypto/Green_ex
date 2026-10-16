@@ -1,0 +1,25 @@
+.news_wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px, 1fr ));
+        gap: 2%;
+}
+.news_wrap li{
+    padding: 5%;
+    background-color: antiquewhite;
+}
+.pic{
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+.pic img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* width: 100%;
+    display: block; */
+}
+
+.news_wrap li h3{
+    padding: 2% 0;
+}

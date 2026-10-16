@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Green Site 예제 </title>
     <!-- 파비콘 -->
-    <link rel="icon" href="images/news1.jpg">
+    <link rel="icon" href="images_low_dose/news1.jpg">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
@@ -14,8 +14,188 @@
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- swiper cdn -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/14.3.0/swiper-bundle.min.js" 
+    integrity="sha512-go1raEie1BV12IyZGj+Z5GR9xWHQqXUPFgAT8Li2fTtyXAMy5xGf6wQ6C9RBHiVlConQCVCmauY1wgsZ5hjNqA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"> -->
+    </script>
+    
+    <!-- swiper css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 자바 연결 -->
+    <script src="js/main.js" defer> </script>
 </head>
 <body>
-    
+    <!-- 전체 레이아웃 -->
+    <div class="wrap"> 
+        <!-- 상단 -->
+        <header class="header"> 
+            <div class="inner"> 
+                <!-- header top -->
+                <div class="headerTop"> 
+                    <ul class="util"> 
+                        <li> <a href="#"> Contact </a> </li>
+                        <li> <a href="#"> Help </a> </li>
+                        <li> <a href="#"> Login </a> </li>
+                        <li> <a href="#"> Join </a> </li>
+                        <li> <a href="#"> Sitemap </a> </li>
+                    </ul>
+                </div>
+                <!-- header bot -->
+                <div class="headerBot"> 
+                    <!-- logo -->
+                    <h1> <a href="#"> GREEN-A </a> </h1>
+                    <!-- menu -->
+                    <ul class="nav"> 
+                        <li> <a href="#"> DEPARTMENT </a> </li>
+                        <li> <a href="#"> GALLERY </a> </li>
+                        <li> <a href="#"> YOUTUBE </a> </li>
+                        <li> <a href="#"> COMMUNITY </a> </li>
+                        <li> <a href="#"> LOCATION </a> </li>
+                    </ul>
+                    <!-- 모바일 메뉴  -->
+                    <div class="hamburger" id="hamburger"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 모바일일 때 사이드 메뉴  -->
+        <div class="mobile_menu" id="mobile_menu"> 
+            <ul>
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">LOCATION</a></li>
+                <li><a href="#">연락처</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인 </a></li>
+        </ul>
+        </div>
+        <div class="overlay"> </div>
+        <!-- 비주얼 -->
+        <div class="visual"> 
+            <!-- 비디오 -->
+            <video autoplay loop muted > 
+                <source src="images/visual.mp4" type="video/mp4" >
+            </video>
+            <!-- 비디오 내용 -->
+            <div class="video_txt inner"> 
+                <h2> INNVATION </h2>
+                <P> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Repellat doloremque ad alias at assumenda
+                </P>
+                <a href="#"> view detail </a>
+            </div>
+        </div>
+        <!-- 뉴스 -->
+        <section class="news"> 
+            <div class="inner"> 
+                <h2> RECENT NEWS </h2>
+                <ul class="news_wrap"> 
+                    <li> 
+                        <div class="pic"> 
+                            <img src="images_low_dose/news1.jpg" alt="">
+                        </div>
+                        <h3> <a href="#"> Lorem ipsum dolor sit amet. </a> </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Deleniti qui recusandae fugit iure maiores debitis?
+                        </p>
+                    </li>
+                    <li> 
+                        <div class="pic"> 
+                            <img src="images_low_dose/news2.jpg" alt="">
+                        </div>
+                        <h3> <a href="#"> Lorem ipsum dolor sit amet. </a> </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Deleniti qui recusandae fugit iure maiores debitis?
+                        </p>
+                    </li>
+                    <li> 
+                        <div class="pic"> 
+                            <img src="images_low_dose/news3.jpg" alt="">
+                        </div>
+                        <h3> <a href="#"> Lorem ipsum dolor sit amet. </a> </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Deleniti qui recusandae fugit iure maiores debitis?
+                        </p>
+                    </li>
+                    <li> 
+                        <div class="pic"> 
+                            <img src="images_low_dose/news4.jpg" alt="">
+                        </div>
+                        <h3> <a href="#"> Lorem ipsum dolor sit amet. </a> </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Deleniti qui recusandae fugit iure maiores debitis?
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 상품 ( 스와이퍼 적용 ) -->
+        <section class="product"> 
+            <div class="inner"> 
+                <h2> PRODUCT </h2>
+                <p> 다양한 상품을 경험하세요. </p>
+                <!-- 스와이퍼 시작 -->
+                <div class="swiper productSwiper"> 
+                    <div class="swiper-wrapper"> 
+                        <!-- 슬라이드 -->
+                        <div class="swiper-slide"> 
+                            <img src="images_low_dose/about-03-1.png" alt="product">
+                            <div class="slide-info"> 
+                                <h3> Creative Design</h3>
+                                <p> 창의적인 디자인 상품 </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <img src="images_low_dose/about-05-1.png" alt="product">
+                            <div class="slide-info"> 
+                                <h3> Creative Design</h3>
+                                <p> 창의적인 디자인 상품 </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <img src="images_low_dose/draw-cristmas.png" alt="product">
+                            <div class="slide-info"> 
+                                <h3> Creative Design</h3>
+                                <p> 창의적인 디자인 상품 </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <img src="images_low_dose/draw-new.png" alt="product">
+                            <div class="slide-info"> 
+                                <h3> Creative Design</h3>
+                                <p> 창의적인 디자인 상품 </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> 
+                            <img src="images_low_dose/mini.avif" alt="product">
+                            <div class="slide-info"> 
+                                <h3> Creative Design</h3>
+                                <p> 창의적인 디자인 상품 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 하단 -->
+        
+    </div>
 </body>
 </html>
