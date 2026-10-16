@@ -1,13 +1,17 @@
-.news_wrap{
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px, 1fr ));
-        gap: 2%;
+.news_wrap {
+    /* display: grid;
+    grid-template-columns: repeat( 4 , minmax( 0 , 1fr )); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
 }
-.news_wrap li{
-    padding: 5%;
+.news_wrap li {
+    /* calc 100 - n / a 에서 n은 gap과 a의 곱  */
+    width: calc( (100% - 6%) / 4 );
+    padding: 1;
     background-color: antiquewhite;
 }
-.pic{
+.pic {
     position: relative;
     height: 180px;
     overflow: hidden;
@@ -19,7 +23,6 @@
     /* width: 100%;
     display: block; */
 }
-
-.news_wrap li h3{
+.news_wrap li h3 {
     padding: 2% 0;
 }

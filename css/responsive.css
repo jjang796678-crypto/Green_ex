@@ -12,3 +12,14 @@
         display: flex;
     }
 }
+@media (max-width: 768px) { 
+    .news_wrap li {
+        width: calc((100% - 2%) / 2);
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 390px) {
+    .news_wrap li {
+        width: 100%;
+    }
+}
