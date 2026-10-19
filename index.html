@@ -30,6 +30,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 자바 연결 -->
     <script src="js/main.js" defer> </script>
+    <!-- swiper 기능  -->
+    <script src="js/swiper_pro.js" defer> </script>
 </head>
 <body>
     <!-- 전체 레이아웃 -->
@@ -90,7 +92,7 @@
             </video>
             <!-- 비디오 내용 -->
             <div class="video_txt inner"> 
-                <h2> INNVATION </h2>
+                <h2> INNOVATION </h2>
                 <P> 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Repellat doloremque ad alias at assumenda
@@ -191,11 +193,38 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 좌우 화살표 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+                <!-- 페이지네이션 -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- 하단 -->
-        <footer> </footer>
+        <footer class="footer"> 
+            <div class="inner"> 
+                <!-- upper -->
+                <div class="upper"> 
+                    <h2> <a href="#"> GREEN-A </a> </h2>
+                    <ul>
+                        <li><a href="#">Plicy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Family Site</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <!-- lower -->
+                <div class="lower"> 
+                    <address> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                        facere.<br />
+                        TEL : 053-111-1234 C.P : 010-1234-5678
+                        <p>2026 GREEN_A &copy; copyright all right reserved.</p>
+                    </address>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

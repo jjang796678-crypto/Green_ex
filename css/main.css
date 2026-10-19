@@ -8,6 +8,22 @@
     margin: auto;
     /* background-color: aquamarine; */
 }
+
+/* 루트 - 교재 복붙 */ 
+:root {
+    /* Color styles */
+    --color--main-color: rgb(255, 183, 183);
+    --color--sub-color01: rgba(127, 146, 255, 1);
+    /* Text-size styles */
+    --text--title-h1: 72px;
+    --text--title-h2: 32px;
+    --text--title-h3: 24px;
+    /* 간격 */
+    --spacing--xl: 70px;
+    --spacing--m: 50px;
+    --spacing--s: 40px;
+}
+
 /* 섹션 */
 section{
     padding: 7% 0;
